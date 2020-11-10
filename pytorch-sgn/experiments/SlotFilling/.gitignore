@@ -1,0 +1,11 @@
+*.py[cod]
+__pycache__
+*.dset
+*.model
+*.txt
+*.json
+demo.clf.*
+sent.*
+*.out
+*-out-*
+.idea

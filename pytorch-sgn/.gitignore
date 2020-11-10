@@ -1,0 +1,15 @@
+/pts
+/data/*/*.txt
+/data/*/*.dat
+/data/*/*.bz2
+/data/*/enwiki*
+/data/*/*/*.txt
+/data/*/*/*.dat
+/data/*/*/*.bz2
+/data/*/*/enwiki*
+/data/*/*/logs
+/data/*/logs
+/data/*/*/save
+/data/*/save
+/result
+/__pycache__
