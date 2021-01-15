@@ -43,6 +43,13 @@ List all options and their explainations, use:
 python <...>.py --help
 ```
 
+## download data
+As the wiki data is too big, we show how we obtain the data.
+You can download the latest Wikipedia dumps here https://dumps.wikimedia.org/enwiki/20210101/, we obtained the data from the "Articles, templates, media/file descriptions, and primary meta-pages." section. An example download URL: https://dumps.wikimedia.org/enwiki/20210101/enwiki-20210101-pages-articles1.xml-p1p41242.bz2
+
+We downloaded about 20 of these files, and preprocess it using this python script.
+https://github.com/jeffchy/Learning-Numeral-Embeddings/blob/master/pytorch-sgn/data/wikipedia/process_wiki.py
+
 ## Preprocess
 ```
 python preprocess.py --MAXDATA=20000000 --save_dir=data/wikipedia/preprocess1B --filtered=filtered.txt --corpus=data/wikipedia/wikiraw/bz2/train.txt --max_vocab=300000 --mode=all --window=5 --scheme=numeral_as_numeral --saved_dir_name=NumeralAsNumeral30W 
